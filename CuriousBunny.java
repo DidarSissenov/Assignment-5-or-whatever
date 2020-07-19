@@ -1,4 +1,4 @@
-public class CuriousBunny extends Animal{
+public class CuriousBunny extends Animal implements Teleport{
 
      public CuriousBunny(String name, String primaryColor){
           super(name, primaryColor);
@@ -13,4 +13,11 @@ public class CuriousBunny extends Animal{
                System.out.println(name + " is Dead ");
           }
      }
+
+     @Override
+     public void teleport() {
+          X = (int)(( Math.random() * (499 - 1 + 1) + 1));
+          Y = (int)(( Math.random() * (999 - 1 + 1) + 1));
+     }
+
 }

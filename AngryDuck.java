@@ -1,4 +1,4 @@
-public class AngryDuck extends WaterFowl {
+public class AngryDuck extends WaterFowl implements Teleport{
 
      public AngryDuck(String name, String primaryColor) {
           super(name, primaryColor);
@@ -7,5 +7,9 @@ public class AngryDuck extends WaterFowl {
      }
 
 
-}
+     public void teleport() {
+          X = (int)(( Math.random() * (999 - 501 + 1) + 501));
+          Y = (int)(( Math.random() * (999 - 1 + 1) + 1));
+     }
 
+}

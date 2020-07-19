@@ -50,7 +50,12 @@ public class Main {
          System.out.println(banan.getPrimaryColor());
          banan.hit();
          System.out.println(banan.getName()+ " doesn't want to play anymore");
-         System.out.println("----------------------------------");
          System.out.println(Animal.getCount()+" Animals are alive");
+//Teleport
+         System.out.println("----------------------------------");
+         banan.teleport();
+
+         duck1.teleport();
+         System.out.println(duck1.getName() + " at " + duck1.getPosition());
     }
 }

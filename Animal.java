@@ -1,9 +1,10 @@
-public abstract class Animal {
+public abstract class Animal{
 
-     protected String name;
+     protected String name, getPosition;
      protected String primaryColor;
      protected int health=3;
      protected static int count;
+     protected int X, Y;
 
      public Animal(String name, String primaryColor){
           this.name=name;
