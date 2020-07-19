@@ -1,0 +1,38 @@
+/**
+ * Auto Generated Java Class.
+ */
+public class AngryDuck extends WaterFowl implements Attacker{
+  
+  int killCount;
+  
+  public AngryDuck(String name, String primaryColor, int killCount){
+    super(name, primaryColor);
+    super.name = name;
+    super.primaryColor = primaryColor;
+    this.killCount = killCount;
+  }
+  
+  public int getKillCount(){
+    return killCount;
+  }
+  
+  public interface attacker{
+    int getKillCount();
+    boolean attack(Object object);
+  }
+    
+  public void attacker(){
+    int objectHealth = health;
+    if(object!=angryDuck && health>0 && objectHealth>0){
+      if(objectHealth==1){
+        this.killCount++;
+      }
+      health-1;
+      System.out.println("AngryDuck attack " + name + " " + this.killCount() + " times.");
+      return true;
+    }
+    else{
+      System.out.println("AngryDuck can't attack " + name +".");
+      return false;
+    }
+}
