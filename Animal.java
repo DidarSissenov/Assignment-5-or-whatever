@@ -4,7 +4,8 @@ public abstract class Animal{
      protected String primaryColor;
      protected int health=3;
      protected static int count;
-     protected int X, Y;
+     protected int X = 0;
+     protected int Y = 0;
 
      public Animal(String name, String primaryColor){
           this.name=name;
