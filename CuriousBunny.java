@@ -18,6 +18,11 @@ public class CuriousBunny extends Animal implements Teleport{
      public void teleport() {
           X = (int)(( Math.random() * (499 - 1 + 1) + 1));
           Y = (int)(( Math.random() * (999 - 1 + 1) + 1));
+          getPosition = X + " " + Y ;
      }
-
+     
+     public String getPosition()
+     {
+       return getPosition;
+     }
 }
