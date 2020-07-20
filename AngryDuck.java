@@ -30,7 +30,7 @@ public class AngryDuck extends WaterFowl implements Teleport{
                if(objectHealth==1){
                     this.killCount++;
                }
-               objectHealth = health-1;
+               objectHealth = objectHealth-1;
                System.out.println("AngryDuck attack " + name + " " + this.killCount + " times.");
           }
           else{
