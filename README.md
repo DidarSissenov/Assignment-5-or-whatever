@@ -4,4 +4,4 @@ Group 7:
 Didar Sissenov
 Amir Mokhammad
 Xion Chenyang
-Ji Zhang
+Ji Zhang (David)
