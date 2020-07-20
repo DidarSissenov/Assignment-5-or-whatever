@@ -1,0 +1,60 @@
+//Hit& Is Alive Status.
+//source code for CuriousBunny.java;
+public void hop(){
+if(!super.isAlive())
+{
+ System.out.println("Animal alreday fainted, can't hop!");
+ return;
+}
+System.out.println(this.getName()+"is hopping")
+}
+
+//source code for HappyPig.java
+public void sleep()
+{
+if (!super.isAlive())
+{
+System.out.println("Animal already fainted, can't sleep! ");
+return;
+}
+System.out.println(this.getName() + " is sleeping");
+}
+public void roll()
+{
+if (!super.isAlive())
+{
+System.out.println("Animal already fainted,can't roll! ");
+return;
+}
+System.out.println(this.getName() + " is rolling");
+}
+}
+//Hit &isAlive status
+public void hit()
+{
+if (isAlive)
+{
+System.out.println("Pikachu used THUNDER SHOCK!");
+health--;
+if (!isAlive())
+{
+System.out.println("Animal is already fainted, can't hit it again!");
+return;
+}
+}
+if (this.health == 0)
+{
+this.isAlive = false;
+count --;
+System.out.println( "*************************************************");
+System.out.println(this.name + " fainted, Pikachu Gained 115 EXP.Points !!");
+System.out.println( "*************************************************");
+}
+}
+
+public boolean isAlive()
+{
+return isAlive;
+}
+}
+
