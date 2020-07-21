@@ -16,7 +16,7 @@ public class LoudGoose extends WaterFowl implements Attacker{
     return killCount;
   }
   
-  public void attacker(){
+  public void attacker(){                         //Xiong and Ji designed this method
     int objectHealth = health;
     if(!(name.equals("LoudGoose")) && health>0 && objectHealth>0){
       if(objectHealth==1){
