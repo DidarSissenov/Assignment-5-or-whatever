@@ -19,7 +19,7 @@ public class LoudGoose extends WaterFowl implements Attacker{
   public void attacker(){
     int objectHealth = health;
     if(!(name.equals("LoudGoose")) && health>0 && objectHealth>0){
-      if(objectHealt==1){
+      if(objectHealth==1){
         this.killCount++;
       }
       objectHealth = objectHealth-1;

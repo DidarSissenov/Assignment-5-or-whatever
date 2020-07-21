@@ -4,6 +4,7 @@ public class CuriousBunny extends Animal implements Teleport{
           super(name, primaryColor);
           super.name = name;
           super.primaryColor = primaryColor;
+          getPosition = X + " " + Y;
      }
 
      public void hop() {
